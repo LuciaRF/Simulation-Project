@@ -1,0 +1,57 @@
+#version 330 core
+//#extension GL_NV_shadow_samplers_cube : enable
+//#version 300 es
+precision mediump float;
+in vec4 vpos;
+in vec2 vtex;
+in vec3 vnormal;
+in vec3 vtangent; //NEW*
+
+
+uniform vec4 vColor;
+uniform vec3 eyePos;//NEW*
+uniform mat4 MVP;
+uniform mat4 ModelMatrix; 
+uniform mat4 ViewMatrix; 
+uniform mat4 ProjectionMatrix; 
+uniform mat4 normalMat;
+
+uniform int enableCubeText;//NEW*
+uniform int enableReflectionText;//NEW
+uniform int enableRefractionTex;//NEW
+uniform float refractionCoef;//NEW
+
+out vec4 fcolor;
+out vec2 ftex;
+out vec3 fnormal;
+out vec3 fpos;
+out mat3 TBN; //NEW*
+out vec3 fCubePos; //NEW
+
+
+void main()
+{
+  gl_Position=MVP*vpos;
+  fcolor=vColor;
+  ftex=vtex;
+
+  fpos=(ModelMatrix *vpos).xyz;
+  fnormal=mat3(transpose(inverse(ModelMatrix)))* vnormal;
+  vec3 tangent=(normalMat*vec4(vtangent,1.0)).xyz;
+  vec3 bitangent=cross(fnormal,tangent);
+  TBN=transpose(mat3(tangent,bitangent,fnormal));									  
+  
+
+  fCubePos=fpos;
+  if(enableReflectionText==1)
+  {	
+     vec3 I = normalize(fpos - eyePos);
+     fCubePos = reflect(I, normalize(fnormal));
+  }
+
+   if(enableRefractionTex==1)
+   {
+      vec3 I = normalize(fpos - eyePos);
+      fCubePos=refract(I, normalize(fnormal),refractionCoef);
+   }
+}

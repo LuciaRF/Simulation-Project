@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta charset="utf-8" />
+<title>Dragon</title>
+<style type="text/css">
+body {
+    overflow:hidden;
+    margin: 0px;
+}
+</style>
+<script type="text/javascript">
+var view3d;
+function ivCommonInit3d()
+{
+  var cnv=document.getElementById("ivwindow3d");
+  cnv.width = window.innerWidth;
+  cnv.height = window.innerHeight;
+  view3d=new ivwindow3d(cnv,"tree.json",0xdadada);
+}
+window.onresize = function() {
+  var cnv=document.getElementById("ivwindow3d");
+  view3d.gl.viewportWidth = cnv.width = window.innerWidth;
+  view3d.gl.viewportHeight = cnv.height = window.innerHeight;
+  view3d.invalidate();
+}
+</script>
+<script type="text/javascript" src="iv3d.js"></script>
+<script type="text/javascript" src="track.js"></script>
+</head>
+
+<body onload="ivCommonInit3d()">
+    <canvas id="ivwindow3d" style="border: none" width="640" height="480"></canvas>
+</body>
+
+</html>

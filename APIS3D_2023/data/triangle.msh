@@ -1,0 +1,45 @@
+<mesh>
+	<buffers>
+		<buffer>
+			<material>
+				<color>1,1,1,1</color>
+				<texture>data/bricks2.jpg</texture>
+				<normal_texture>data/bricks2_normal.jpg</normal_texture>
+				<shininess>16</shininess>
+				<depthWrite>true</depthWrite>
+			</material>
+			<indices>0,3,1,0,1,2</indices>
+			<coords vertexCompCount="3">
+			-1.000000,1.000000,1.000000,
+			1.000000,-1.000000,1.000000,
+			-1.000000,-1.000000,1.000000,	
+			1.000000,1.000000,1.000000			
+			
+			</coords>
+			<normals normalCompCount="3">
+			0.000000,-1.000000,0.000000,
+			0.000000,-1.000000,0.000000,
+			0.000000,-1.000000,0.000000,
+			0.000000,-1.000000,0.000000
+
+			</normals>
+			<tangents tangentCompCount="3">
+			1.000000,0.000000,0.000000,
+			1.000000,0.000000,0.000000,
+			1.000000,0.000000,0.000000,
+			1.000000,0.000000,0.000000
+
+
+			</tangents>
+			<texCoords texCoordCompCount="2">
+			0.000000,0.000000,
+			1.000000,1.000000,
+			1.000000,0.0000,
+			0.000000,1.0000
+
+			
+			
+			</texCoords>
+		</buffer>
+	</buffers>
+</mesh>

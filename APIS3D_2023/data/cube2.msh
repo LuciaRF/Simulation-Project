@@ -1,0 +1,12 @@
+<mesh>
+	<buffers>
+		<buffer>
+			<material>
+				<texture>data/front.png</texture>
+			</material>
+			<indices>1,3,2,0,1,2</indices>
+			<coords vertexCompCount="3">-0.5,-0.5, 0.5,0.5,-0.5, 0.5,-0.5, 0.5, 0.5,0.5, 0.5, 0.5</coords>
+			<texCoords texCoordCompCount="2">0.000000,0.000000,1.0,0.0,0.0,1.0,1.0,1.0</texCoords>
+		</buffer>
+	</buffers>
+</mesh>

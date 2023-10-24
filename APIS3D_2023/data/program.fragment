@@ -1,0 +1,107 @@
+#version 330 core
+#extension GL_NV_shadow_samplers_cube : enable
+//#version 300 es
+precision mediump float;
+
+uniform sampler2D samplerColor;  
+uniform sampler2D samplerNormal;//NEW*
+uniform samplerCube samplerCubeMap;//NEW*
+uniform samplerCube samplerReflectMap;//NEW
+uniform samplerCube samplerRefractMap;//NEW
+
+
+uniform int enableLight; 
+uniform int enableColorText; 
+uniform int enableNormalText;//NEW*
+uniform int enableCubeText;//NEW*
+uniform int enableReflectionText;//NEW*
+uniform int enableRefractionTex;//NEW*
+
+uniform vec3 eyePos; 
+uniform vec3 lightPos; 
+uniform vec3 lightColor; 
+uniform vec3 ambientLight;
+uniform int shininess;
+
+in vec4 fcolor;
+in vec2 ftex;
+in vec3 fnormal;
+in vec3 fpos;
+in mat3 TBN; //NEW
+in vec3 fCubePos; //NEW
+out vec4 fragColor;
+
+
+void main()
+{       
+    vec3 uvw=normalize(fCubePos);
+    fragColor = vec4(0,0,0,1.0f);
+    if (enableColorText == 1){
+        if (enableCubeText == 1)
+	       {                                              
+             fragColor = textureCube(samplerCubeMap, uvw);
+           }else  
+		     fragColor = texture(samplerColor, ftex);
+        }else
+             fragColor=fcolor;
+       
+       vec4 reflectionColor=vec4(0,0,0,0);
+       vec4 refractionColor=vec4(0,0,0,0);
+       if (enableColorText == 1)
+        {
+           if (enableCubeText == 1)
+	       {                                               
+              fragColor = textureCube(samplerCubeMap, uvw);
+           }else  
+		     fragColor = texture(samplerColor, ftex);
+        }
+       else
+		    fragColor = fcolor;
+	    
+	    if(enableReflectionText==1){
+		    
+		    reflectionColor = textureCube(samplerReflectMap, uvw); 
+	    }
+
+       if(enableRefractionTex==1){
+		    
+		    refractionColor = textureCube(samplerRefractMap, uvw); 
+	    }
+
+       vec3 normal=vec3(0,0,0);
+       if(enableLight == 1)
+       {
+       if(enableNormalText==1){
+		    vec3 normalTex=texture(samplerNormal,ftex).rgb;
+		    normal = normalize(normalize(normalTex*2-1.0)*TBN);
+	    }else{
+		    normal=normalize(fnormal);
+	    }
+	    
+	    vec3 lightDir = normalize(lightPos-fpos);
+	    vec3 viewDir = normalize(eyePos - fpos);
+	    vec3 result = ambientLight;
+
+	    // Diffuse
+	    vec3 diffuseLight=vec3(0,0,0);
+	    diffuseLight = vec3(max(dot(normal, lightDir), 0.0)) * lightColor;
+
+	    // Specular
+	    vec3 specularLight=vec3(0,0,0);
+	    vec3 reflectDir = reflect(-lightDir, normal);
+	    specularLight = vec3(pow(max(dot(viewDir, reflectDir), 0.0), shininess)) * lightColor;
+	    vec3 light=diffuseLight+specularLight+ambientLight;
+	    fragColor*=vec4(light,1.0f);
+	    
+       }
+    //fragColor = texture2D(samplerColor, ftex);
+    if(enableReflectionText==1)
+      { vec3 mixColor=mix(fragColor.rgb,reflectionColor.rgb,reflectionColor.a);
+        fragColor=vec4(mixColor, fragColor.a);
+       }
+    if(enableRefractionTex==1)
+      { vec3 mixColor=mix(fragColor.rgb,refractionColor.rgb,refractionColor.a);
+        fragColor=vec4(mixColor, fragColor.a);
+       }
+
+}

@@ -1,0 +1,45 @@
+﻿  AABB.cpp
+C:\Users\Lu\Documents\U-tad\Rendering y visualizacion  realista\Raytrace_SDL_plantilla\Raytrace_SDL_plantilla\APIS3D_2023\AABB.cpp(284,34): warning C4305: 'inicializando': truncamiento de 'double' a 'const float'
+  Billboard.cpp
+  Emiter.cpp
+  RENDERING_2023.cpp
+  RayTrace.cpp
+C:\Users\Lu\Documents\U-tad\Rendering y visualizacion  realista\Raytrace_SDL_plantilla\Raytrace_SDL_plantilla\APIS3D_2023\RayTrace.cpp(207,103): warning C4244: 'argumento': conversión de 'T' a 'int'; posible pérdida de datos
+          with
+          [
+              T=float
+          ]
+C:\Users\Lu\Documents\U-tad\Rendering y visualizacion  realista\Raytrace_SDL_plantilla\Raytrace_SDL_plantilla\APIS3D_2023\RayTrace.cpp(207,70): warning C4244: 'argumento': conversión de 'T' a 'int'; posible pérdida de datos
+          with
+          [
+              T=float
+          ]
+C:\Users\Lu\Documents\U-tad\Rendering y visualizacion  realista\Raytrace_SDL_plantilla\Raytrace_SDL_plantilla\APIS3D_2023\RayTrace.cpp(497,26): warning C4018: '<': no coinciden signed/unsigned
+  RayTraceGLSL.cpp
+  camera.cpp
+C:\Users\Lu\Documents\U-tad\Rendering y visualizacion  realista\Raytrace_SDL_plantilla\Raytrace_SDL_plantilla\APIS3D_2023\camera.cpp(94,23): warning C4244: 'inicializando': conversión de 'double' a 'float'; posible pérdida de datos
+C:\Users\Lu\Documents\U-tad\Rendering y visualizacion  realista\Raytrace_SDL_plantilla\Raytrace_SDL_plantilla\APIS3D_2023\camera.cpp(95,23): warning C4244: 'inicializando': conversión de 'double' a 'float'; posible pérdida de datos
+C:\Users\Lu\Documents\U-tad\Rendering y visualizacion  realista\Raytrace_SDL_plantilla\Raytrace_SDL_plantilla\APIS3D_2023\camera.cpp(96,18): warning C4244: '=': conversión de 'double' a 'int'; posible pérdida de datos
+C:\Users\Lu\Documents\U-tad\Rendering y visualizacion  realista\Raytrace_SDL_plantilla\Raytrace_SDL_plantilla\APIS3D_2023\camera.cpp(97,18): warning C4244: '=': conversión de 'double' a 'int'; posible pérdida de datos
+  cubo3d.cpp
+C:\Users\Lu\Documents\U-tad\Rendering y visualizacion  realista\Raytrace_SDL_plantilla\Raytrace_SDL_plantilla\APIS3D_2023\cubo3d.cpp(37,6): warning C4305: 'argumento': truncamiento de 'int' a 'char'
+C:\Users\Lu\Documents\U-tad\Rendering y visualizacion  realista\Raytrace_SDL_plantilla\Raytrace_SDL_plantilla\APIS3D_2023\cubo3d.cpp(37,32): warning C4309: 'argumento': truncamiento de valor constante
+C:\Users\Lu\Documents\U-tad\Rendering y visualizacion  realista\Raytrace_SDL_plantilla\Raytrace_SDL_plantilla\APIS3D_2023\cubo3d.cpp(39,6): warning C4305: 'argumento': truncamiento de 'int' a 'char'
+C:\Users\Lu\Documents\U-tad\Rendering y visualizacion  realista\Raytrace_SDL_plantilla\Raytrace_SDL_plantilla\APIS3D_2023\cubo3d.cpp(39,32): warning C4309: 'argumento': truncamiento de valor constante
+C:\Users\Lu\Documents\U-tad\Rendering y visualizacion  realista\Raytrace_SDL_plantilla\Raytrace_SDL_plantilla\APIS3D_2023\cubo3d.cpp(42,6): warning C4305: 'argumento': truncamiento de 'int' a 'char'
+C:\Users\Lu\Documents\U-tad\Rendering y visualizacion  realista\Raytrace_SDL_plantilla\Raytrace_SDL_plantilla\APIS3D_2023\cubo3d.cpp(42,32): warning C4309: 'argumento': truncamiento de valor constante
+C:\Users\Lu\Documents\U-tad\Rendering y visualizacion  realista\Raytrace_SDL_plantilla\Raytrace_SDL_plantilla\APIS3D_2023\cubo3d.cpp(44,6): warning C4305: 'argumento': truncamiento de 'int' a 'char'
+C:\Users\Lu\Documents\U-tad\Rendering y visualizacion  realista\Raytrace_SDL_plantilla\Raytrace_SDL_plantilla\APIS3D_2023\cubo3d.cpp(44,32): warning C4309: 'argumento': truncamiento de valor constante
+  glrender.cpp
+  gltexture.cpp
+  light.cpp
+  material.cpp
+  object3d.cpp
+  particle.cpp
+  render.cpp
+  state.cpp
+  triangle3d.cpp
+  world.cpp
+C:\Users\Lu\Documents\U-tad\Rendering y visualizacion  realista\Raytrace_SDL_plantilla\Raytrace_SDL_plantilla\APIS3D_2023\world.cpp(12,38): warning C4267: 'inicializando': conversión de 'size_t' a 'int'; posible pérdida de datos
+  Generando código...
+  APIS3D_2023.vcxproj -> C:\Users\Lu\Documents\U-tad\Rendering y visualizacion  realista\Raytrace_SDL_plantilla\Raytrace_SDL_plantilla\x64\Debug\APIS3D_2023.exe

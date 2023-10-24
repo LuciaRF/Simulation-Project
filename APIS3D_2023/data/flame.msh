@@ -1,0 +1,16 @@
+<mesh>
+	<buffers>
+		<buffer>
+			<material>
+				<texture>data/flame.png</texture>
+				<light>false</light>
+				<blendMode>alpha</blendMode>
+				<culling>true</culling>
+				<depthWrite>true</depthWrite>
+			</material>
+			<indices>0,1,2,0,2,3</indices>
+			<coords vertexCompCount="3">-0.5,-0.5,0.0,-0.5,0.5,0.0,0.5,0.5,0.0,0.5,-0.5,0.0</coords>
+			<texCoords texCoordCompCount="2">0.000000,0.000000,  0.000000,1.000000,1.000000,1.000000,1.000000,0.000000</texCoords>
+		</buffer>
+	</buffers>
+</mesh>

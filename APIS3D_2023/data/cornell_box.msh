@@ -1,0 +1,137 @@
+<mesh>
+	<buffers>
+	<buffer>
+			<material>
+				<light>true</light>
+				<color>0.8,0.8,0.8,0.8</color>				
+				<shininess>1</shininess>
+				<receiveShadow>false</receiveShadow>
+			</material>
+			<indices>0,1,2,0,2,3</indices>
+			<coords vertexCompCount="3">
+			1.000000,1.000000,-1.000000,
+			1.000000,-1.000000,-1.000000,
+			-1.000000,-1.000000,-1.000000,
+			-1.000000,1.000000,-1.000000
+			</coords>
+			<normals normalCompCount="3">
+			0.0,0.0,1.0,
+			0.0,0.0,1.0,
+			0.0,0.0,1.0,
+			0.0,0.0,1.0
+			</normals>
+			<texCoords texCoordCompCount="2">
+			0.000000,0.000000,
+			0.000000,1.000000,
+			1.000000,1.000000,
+			1.000000,0.000000
+			</texCoords>
+		</buffer>
+		<buffer>
+			<material>
+				<light>true</light>
+				<color>1,0.2,0.2,1</color>				
+				<shininess>1</shininess>
+			</material>
+			<indices>0,1,2,0,2,3</indices>
+			<coords vertexCompCount="3">
+			-1.000000,-1.000000,1.000000,
+			-1.000000,1.000000,1.000000,
+			-1.000000,1.000000,-1.000000,
+			-1.000000,-1.000000,-1.000000
+			</coords>
+			<normals normalCompCount="3">
+			1.0,0.0,0.0,
+			1.0,0.0,0.0,
+			1.0,0.0,0.0,
+			1.0,0.0,0.0
+			</normals>
+			<texCoords texCoordCompCount="2">
+			1.000000,1.000000,
+			1.000000,0.000000,
+			0.000000,0.000000,
+			0.000000,1.000000
+			</texCoords>
+		</buffer>
+		<buffer>
+			<material>
+				<light>true</light>
+				<color>0.2,1,0.2,1</color>				
+				<shininess>1</shininess>
+			</material>
+			<indices>0,1,2,0,2,3</indices>
+			<coords vertexCompCount="3">
+			1.000000,-1.000000,-1.000000,
+			1.000000,1.000000,-1.000000,
+			1.000000,1.000000,1.000000,
+			1.000000,-1.000000,1.000000
+			</coords>
+			<normals normalCompCount="3">
+			-1.0,0.0,0.0,
+			-1.0,0.0,0.0,
+			-1.0,0.0,0.0,
+			-1.0,0.0,0.0
+			</normals>
+			<texCoords texCoordCompCount="2">
+			1.000000,1.000000,
+			1.000000,0.000000,
+			0.000000,0.000000,
+			0.000000,1.000000
+			</texCoords>
+		</buffer>
+		
+		<buffer>
+			<material>
+				<light>true</light>
+				<color>0.8,0.8,0.8,0.8</color>				
+				<shininess>1</shininess>
+			</material>
+			<indices>0,1,2,0,2,3</indices>
+			<coords vertexCompCount="3">
+			1.000000,1.000000,-1.000000,
+			-1.000000,1.000000,-1.000000,
+			-1.000000,1.000000,1.000000,
+			1.000000,1.000000,1.000000
+			</coords>
+			<normals normalCompCount="3">
+			0.0,-1.0,0.0,
+			0.0,-1.0,0.0,
+			0.0,-1.0,0.0,
+			0.0,-1.0,0.0
+			</normals>
+			<texCoords texCoordCompCount="2">
+			0.000000,1.000000,
+			0.000000,0.000000,
+			1.000000,0.000000,
+			1.000000,1.000000
+			</texCoords>
+		</buffer>
+		<buffer>
+			<material>
+				<light>true</light>
+				<color>0.8,0.8,0.8,0.8</color>				
+				<shininess>1</shininess>
+			</material>
+			<indices>0,1,2,0,2,3</indices>
+			<coords vertexCompCount="3">
+			1.000000,-1.000000,-1.000000,
+			1.000000,-1.000000,1.000000,
+			-1.000000,-1.000000,1.000000,
+			-1.000000,-1.000000,-1.000000
+			</coords>
+			<normals normalCompCount="3">
+			0.0,1.0,0.0,
+			0.0,1.0,0.0,
+			0.0,1.0,0.0,
+			0.0,1.0,0.0
+			</normals>
+			<texCoords texCoordCompCount="2">
+			1.000000,1.000000,
+			1.000000,0.000000,
+			0.000000,0.000000,
+			0.000000,1.000000
+			</texCoords>
+		</buffer>
+	</buffers>
+	
+</mesh>

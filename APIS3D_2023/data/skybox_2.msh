@@ -1,0 +1,174 @@
+<mesh>
+	<buffers>
+	<buffer>
+			<material>
+				<light>false</light>
+				<color>1,1,1,1</color>
+				<texture>data/sky_back.png</texture>
+				<shininess>0</shininess>
+				<receiveShadow>false</receiveShadow>
+			</material>
+			<indices>0,1,2,0,2,3</indices>
+			<coords vertexCompCount="3">
+			1.000000,1.000000,-1.000000,
+			1.000000,-1.000000,-1.000000,
+			-1.000000,-1.000000,-1.000000,
+			-1.000000,1.000000,-1.000000
+			</coords>
+			<normals normalCompCount="3">
+			0.0,0.0,1.0,
+			0.0,0.0,1.0,
+			0.0,0.0,1.0,
+			0.0,0.0,1.0
+			</normals>
+			<texCoords texCoordCompCount="2">
+			0.000000,0.000000,
+			0.000000,1.000000,
+			1.000000,1.000000,
+			1.000000,0.000000
+			</texCoords>
+		</buffer>
+		<buffer>
+			<material>
+				<light>false</light>
+				<color>1,1,1,1</color>
+				<texture>data/sky_left.png</texture>
+				<shininess>0</shininess>
+				<receiveShadow>false</receiveShadow>
+			</material>
+			<indices>0,1,2,0,2,3</indices>
+			<coords vertexCompCount="3">
+			-1.000000,-1.000000,1.000000,
+			-1.000000,1.000000,1.000000,
+			-1.000000,1.000000,-1.000000,
+			-1.000000,-1.000000,-1.000000
+			</coords>
+			<normals normalCompCount="3">
+			1.0,0.0,0.0,
+			1.0,0.0,0.0,
+			1.0,0.0,0.0,
+			1.0,0.0,0.0
+			</normals>
+			<texCoords texCoordCompCount="2">
+			1.000000,1.000000,
+			1.000000,0.000000,
+			0.000000,0.000000,
+			0.000000,1.000000
+			</texCoords>
+		</buffer>
+		<buffer>
+			<material>
+				<light>false</light>
+				<color>1,1,1,1</color>
+				<texture>data/sky_right.png</texture>
+				<shininess>0</shininess>
+				<receiveShadow>false</receiveShadow>
+			</material>
+			<indices>0,1,2,0,2,3</indices>
+			<coords vertexCompCount="3">
+			1.000000,-1.000000,-1.000000,
+			1.000000,1.000000,-1.000000,
+			1.000000,1.000000,1.000000,
+			1.000000,-1.000000,1.000000
+			</coords>
+			<normals normalCompCount="3">
+			-1.0,0.0,0.0,
+			-1.0,0.0,0.0,
+			-1.0,0.0,0.0,
+			-1.0,0.0,0.0
+			</normals>
+			<texCoords texCoordCompCount="2">
+			1.000000,1.000000,
+			1.000000,0.000000,
+			0.000000,0.000000,
+			0.000000,1.000000
+			</texCoords>
+		</buffer>
+		
+		<buffer>
+			<material>
+				<light>false</light>
+				<color>1,1,1,1</color>
+				<texture>data/sky_top.png</texture>
+				<shininess>0</shininess>
+				<receiveShadow>false</receiveShadow>
+			</material>
+			<indices>0,1,2,0,2,3</indices>
+			<coords vertexCompCount="3">
+			1.000000,1.000000,-1.000000,
+			-1.000000,1.000000,-1.000000,
+			-1.000000,1.000000,1.000000,
+			1.000000,1.000000,1.000000
+			</coords>
+			<normals normalCompCount="3">
+			0.0,-1.0,0.0,
+			0.0,-1.0,0.0,
+			0.0,-1.0,0.0,
+			0.0,-1.0,0.0
+			</normals>
+			<texCoords texCoordCompCount="2">
+			0.000000,1.000000,
+			0.000000,0.000000,
+			1.000000,0.000000,
+			1.000000,1.000000
+			</texCoords>
+		</buffer>
+		<buffer>
+			<material>
+				<light>false</light>
+				<color>1,1,1,1</color>
+				<texture>data/sky_bottom.png</texture>
+				<shininess>0</shininess>
+				<receiveShadow>false</receiveShadow>
+			</material>
+			<indices>0,1,2,0,2,3</indices>
+			<coords vertexCompCount="3">
+			1.000000,-1.000000,-1.000000,
+			1.000000,-1.000000,1.000000,
+			-1.000000,-1.000000,1.000000,
+			-1.000000,-1.000000,-1.000000
+			</coords>
+			<normals normalCompCount="3">
+			0.0,1.0,0.0,
+			0.0,1.0,0.0,
+			0.0,1.0,0.0,
+			0.0,1.0,0.0
+			</normals>
+			<texCoords texCoordCompCount="2">
+			1.000000,1.000000,
+			1.000000,0.000000,
+			0.000000,0.000000,
+			0.000000,1.000000
+			</texCoords>
+		</buffer>
+				<buffer>
+			<material>
+				<light>false</light>
+				<color>1,1,1,1</color>
+				<texture>data/sky_front.png</texture>
+				<shininess>0</shininess>
+				<receiveShadow>false</receiveShadow>
+			</material>
+			<indices>0,1,2,0,2,3</indices>
+			<coords vertexCompCount="3">
+			1.000000,-1.000000,1.000000,
+			1.000000,1.000000,1.000000,
+			-1.000000,1.000000,1.000000,
+			-1.000000,-1.000000,1.000000,
+			</coords>
+			<normals normalCompCount="3">
+			0.0,0.0,-1.0,
+			0.0,0.0,-1.0,
+			0.0,0.0,-1.0,
+			0.0,0.0,-1.0
+			</normals>
+			<texCoords texCoordCompCount="2">
+			1.000000,1.000000,
+			1.000000,0.000000,
+			0.000000,0.000000,
+			0.000000,1.000000
+			</texCoords>
+		</buffer>
+	</buffers>
+	
+</mesh>

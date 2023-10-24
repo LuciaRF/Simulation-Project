@@ -1,0 +1,14 @@
+#version 310 es
+layout (local_size_x = 32) in;
+layout(binding = 0) buffer SSBO{
+    int counter[];
+};
+
+
+
+void main(){
+    uint id=uint(gl_WorkGroupID.x * gl_WorkGroupSize.x + gl_LocalInvocationID.x);
+    if(id>uint(32)) return;
+    counter[id] = 2;
+   //  counter[0] = 789;
+}
